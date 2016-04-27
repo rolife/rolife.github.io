@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
 <script type="text/javascript">
 	var url = location.search.split('url=')[1];
+	var code = location.search.split('code=')[1];
 	if (url && url.length) {
 		window.location.href = url;
+	} else if (code && code.length) {
+		document.body.innerHTML = 'http://git.io/' + code;
 	} else {
 		window.location.href = 'https://rolife.ru/';
 	}
