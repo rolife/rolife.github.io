@@ -3,5 +3,13 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<script type="text/javascript">
+	var url = location.search.split('url=')[1];
+	if (url && url.length) {
+		window.location.href = url;
+	} else {
+		window.location.href = 'https://rolife.ru/';
+	}
+</script>
 </body>
 </html>
